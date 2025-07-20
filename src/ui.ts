@@ -53,7 +53,7 @@ export class UIManager {
     };
 
     this.pane = new Pane({
-      title: "Multi-Population Physarum",
+      title: "Physarum",
       expanded: true,
     });
 
@@ -90,6 +90,25 @@ export class UIManager {
     globalFolder
       .addButton({ title: "New Random Config" })
       .on("click", this.params.regenerateConfig);
+
+    const githubButton = globalFolder
+      .addButton({ title: "GitHub" })
+      .on("click", () => {
+        window.open("https://github.com/tobiaslrn/physarum", "_blank");
+      });
+
+    const buttonElement = githubButton.element.querySelector(
+      ".tp-btnv_b"
+    ) as HTMLElement;
+    if (buttonElement) {
+      buttonElement.innerHTML = `
+        <img src="./resources/github-mark-white.svg" width="16" height="16" style="margin-right: 6px; filter: brightness(0) invert(1);" alt="GitHub">
+        GitHub
+      `;
+      buttonElement.style.display = "flex";
+      buttonElement.style.alignItems = "center";
+      buttonElement.style.justifyContent = "center";
+    }
   }
 
   private setupColorControls(): void {

@@ -1,4 +1,4 @@
-# 🦠 Physarum Simulation
+# 🦠 Physarum
 
 A WebGPU-powered simulation of _Physarum Polycephalum_, better known as slime mold.
 Thanks to GPU compute shaders, the simulation can run at 144 FPS with 100 million particles.
