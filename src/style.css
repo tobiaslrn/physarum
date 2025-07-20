@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+h1 {
+  position: absolute;
+  color:#ccc;
+  margin: 30px 30px;
+  z-index: 1;
+}
+
+/* Tweakpane styling */
+.tp-dfwv {
+  width: 320px !important;
+}
+
+.tp-fldv_t {
+  transition: border-left 0.2s ease;
+}
+
+.tp-fldv_t:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Custom population color indicators */
+.population-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
