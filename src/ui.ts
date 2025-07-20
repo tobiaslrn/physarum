@@ -102,7 +102,6 @@ export class UIManager {
     ) as HTMLElement;
     if (buttonElement) {
       buttonElement.innerHTML = `
-        <img src="/physarum/resources/github-mark-white.svg" width="16" height="16" style="margin-right: 6px; filter: brightness(0) invert(1);" alt="GitHub">
         GitHub
       `;
       buttonElement.style.display = "flex";
