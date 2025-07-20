@@ -24,9 +24,9 @@ export interface MultiPopulationConfig {
 export function createRandomConfig(): PopulationConfig {
   return {
     sensor_distance: 15.0 + Math.random() * 25.0, // 15 – 40 px
-    step_distance: 1.0 + Math.random() * 2.0, // 1 – 3 px per tick
-    sensor_angle: (10.0 + Math.random() * 40.0) * (Math.PI / 180.0), // 10° – 50°
-    rotation_angle: (10.0 + Math.random() * 40.0) * (Math.PI / 180.0), // 10° – 50°
+    step_distance: 1.0 + Math.random() * 1.0, // 1 – 3 px per tick
+    sensor_angle: (5.0 + Math.random() * 40.0) * (Math.PI / 180.0), // 5° – 50°
+    rotation_angle: (5.0 + Math.random() * 40.0) * (Math.PI / 180.0), // 5° – 50°
     decay_factor: 0.8 + Math.random() * 0.05, // 0.80 – 0.85
     deposition_amount: 5.0 + Math.random() * 5.0, // 5 – 10 units
   };
